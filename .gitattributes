@@ -3,8 +3,58 @@
 
 # Explicitly declare text files you want to always be normalized and converted
 # to native line endings on checkout.
-*.c text
-*.h text
+
+# Script
+*.bash            text eol=lf
+*.bat             text eol=crlf
+*.cmd             text eol=crlf
+*.sh              text eol=lf
+
+# C
+*.c               text
+*.h               text
+
+# C++
+*.csp             text
+
+# Javascript
+*.js              text
+*.ts              text
+
+# JSON Format
+*.json            text
+
+# Docker
+*.dockerignore    text
+Dockerfile        text
+
+# Front-end file
+*.css             text
+*.scss            text
+*.htm             text diff=html
+*.html            text diff=html
+
+# Documentation
+*.md              text
+license           text
+LICENSE           text
+*README*          text
+
+# Linters
+.eslintrc.js      text
+
+# Configs
+*.cnf             text
+*.conf            text
+*.config          text
+.editorconfig     text
+.env              text
+.gitattributes    text
+.gitconfig        text
+.prettierrc       text
+*.yaml            text
+*.yml             text
+Makefile          text
 
 # Declare files that will always have CRLF line endings on checkout.
 *.org text eol=crlf
