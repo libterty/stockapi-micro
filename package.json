@@ -1,0 +1,12 @@
+{
+  "name": "stockapi-micro",
+  "version": "1.0.0",
+  "description": "Stock Market Prediction Trading Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "11",
+  "license": "apache license 2.0"
+}
