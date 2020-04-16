@@ -4,9 +4,57 @@
   "description": "Stock Market Prediction Trading Bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf ./dist && tsc -p .",
+    "prerestart": "tsc --watch",
+    "start": "node dist/index.js",
+    "start:dev": "nodemon src/index.ts",
+    "test": "NODE_ENV=test jest --maxWorkers=2",
+    "test:watch": "NODE_ENV=test jest --watch",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint '{src,apps,libs,test}/**/*.ts' --fix"
   },
   "keywords": [],
   "author": "11",
-  "license": "apache license 2.0"
+  "license": "apache license 2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:libterty/stockapi-micro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/libterty/stockapi-micro/issues"
+  },
+  "homepage": "https://github.com/libterty/stockapi-micro",
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^25.3.0",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.4",
+    "ts-jest": "^25.3.1",
+    "ts-node": "^8.8.2",
+    "tsconfig-paths": "^3.9.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "test",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
 }
