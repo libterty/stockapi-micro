@@ -1,6 +1,6 @@
 {
   "name": "stockapi-micro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stock Market Prediction Trading Bot",
   "main": "index.js",
   "scripts": {
@@ -25,10 +25,14 @@
   },
   "homepage": "https://github.com/libterty/stockapi-micro",
   "dependencies": {
+    "amqplib": "^0.5.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "@types/amqplib": "^0.5.13",
+    "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.6",
     "@types/node": "^13.11.1",
     "@typescript-eslint/eslint-plugin": "^2.28.0",
