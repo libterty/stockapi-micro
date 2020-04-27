@@ -1,6 +1,6 @@
 {
   "name": "stockapi-micro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stock Market Prediction Trading Bot",
   "main": "index.js",
   "scripts": {
