@@ -21,11 +21,5 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run mocha!
+      # run jest!
       - run: npm test
-
-      - run:
-          name: 'echo token'
-          command: |
-            echo $$CODECOV_TOKEN
-      - run: codecov -token=$CODECOV_TOKEN
