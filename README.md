@@ -1,5 +1,7 @@
 # Stock Market Prediction Trading Bot
 
+![CircleCI](https://img.shields.io/circleci/build/gh/libterty/stockapi-micro/dev)
+
 - **Stock Market Prediction Trading Bot**, gathering machine learning and deep learning for stock mocket. And a trading bot system simulations.
 
 ## Environment Requirements
