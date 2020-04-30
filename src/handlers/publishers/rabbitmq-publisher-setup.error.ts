@@ -5,7 +5,7 @@ export class RabbitMQPublisherSetupError extends RabbitMQError {
 
   constructor(message?: string) {
     super(message); // 'Error' breaks prototype chain
-    this.message = 'RabbitMQPublisherSetupError';
+    this.name = 'RabbitMQPublisherSetupError';
     Object.setPrototypeOf(this, RabbitMQPublisherSetupError.prototype); // Restore Chain prototype
   }
 }
